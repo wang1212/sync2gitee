@@ -1,0 +1,19 @@
+name: sync2gitee
+
+on: push
+
+jobs:
+  repo-sync:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Mirror the Github repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/wang1212
+          dst: gitee/i_wang1212
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          black_list: "sync2gitee"
+          force_update: true
