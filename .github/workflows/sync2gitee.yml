@@ -20,3 +20,4 @@ jobs:
           dst_token: ${{ secrets.GITEE_TOKEN }}
           black_list: "sync2gitee"
           force_update: true
+          timeout: '1h'
