@@ -21,3 +21,4 @@ jobs:
           black_list: "sync2gitee,font-glyphs,canvg,WebODM,exceljs,awesome-satellite-imagery-datasets,bubble-wrap,mapboxgl-vector-tiles"
           force_update: true
           timeout: '1h'
+          debug: true
